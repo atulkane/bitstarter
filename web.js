@@ -6,7 +6,7 @@ var app = express.createServer(express.logger());
 app.get('/', function(request, response) {
   //response.send('Hello World from index.html');
   // still need to figure out how to read file 
-   reponse.send(fs.readFileSync('index.html', 'ascii'));
+   response.send(fs.readFileSync('index.html', 'ascii'));
 });
 
 var port = process.env.PORT || 5000;
